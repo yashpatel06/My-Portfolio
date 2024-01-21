@@ -8,7 +8,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <div className={styles.container}>
-      <div style={{ display: "flex", gap: "20px" }}>
+      <div>
         <img
           src={getImageUrl(imageSrc)}
           alt={`Image of ${title}`}
@@ -16,14 +16,18 @@ export const ProjectCard = ({
           style={{ borderRadius: "10px" }}
         />
         <div>
-          <h3 className={styles.title}>{title}</h3>
-          <p className={styles.description}>{description}</p>
+          <h3 className={styles.title} style={{ fontSize: "30px" }}>
+            {title}
+          </h3>
+          <p style={{ fontSize: "20px" }} className={styles.description}>
+            {description}
+          </p>
         </div>
       </div>
       <ul className={styles.skills}>
         {skills.map((skill, id) => {
           return (
-            <li key={id} className={styles.skill}>
+            <li key={id} className={styles.skill} style={{ fontSize: "18px" }}>
               {skill}
             </li>
           );
@@ -31,7 +35,7 @@ export const ProjectCard = ({
       </ul>
       <div style={{ marginTop: "20px" }}>
         <a
-        target="_blank"
+          target="_blank"
           href={demo}
           style={{
             color: "white",
@@ -40,6 +44,7 @@ export const ProjectCard = ({
             borderRadius: "20px",
             paddingLeft: "20px",
             paddingRight: "20px",
+            fontSize: "14px",
           }}
         >
           Demo

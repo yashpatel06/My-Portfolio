@@ -13,7 +13,7 @@ export const Experience = () => {
       id="experience"
     >
       <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
+      <div className={styles.content} style={{ marginTop: "60px" }}>
         <div className={styles.skills}>
           {skills.map((skill, id) => {
             return (
@@ -33,6 +33,9 @@ export const Experience = () => {
                 <img
                   src={getImageUrl(historyItem.imageSrc)}
                   alt={`${historyItem.organisation} Logo`}
+                  style={{
+                    borderRadius: "5px",
+                  }}
                 />
                 <div className={styles.historyItemDetails}>
                   <h3>{`${historyItem.role},`}</h3>
