@@ -28,6 +28,6 @@ jobs:
            npm i --force 
            npm run build
     - name: Copy dist file
-    - run: cp /actions-runner/_work/My-Portfolio/My-Portfolio/dist/* /var/www/html/My-Portfolio/dist
+    - run: -r cp /actions-runner/_work/My-Portfolio/My-Portfolio/dist/* /var/www/html/My-Portfolio/dist
     
    
