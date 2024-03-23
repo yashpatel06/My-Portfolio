@@ -28,8 +28,5 @@ jobs:
            cd /var/www/html/My-Portfolio
            sudo git stash
            sudo git pull
-           sudo npm i --force 
-           sudo npm run build
-    # Copy the dist file to another location
     
    
