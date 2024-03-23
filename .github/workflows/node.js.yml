@@ -25,9 +25,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: |
-           npm i --force 
-           npm run build
-    - name: Copy dist file
-      run: cp -r actions-runner/_work/My-Portfolio/My-Portfolio/dist/* /var/www/html/My-Portfolio/dist
+           cd /var/www/html/My-Portfolio
+           sudo git stash
+           sudo git pull
     
    
