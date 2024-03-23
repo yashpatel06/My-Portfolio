@@ -24,9 +24,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm i --force
-    - run: npm run build --if-present
+    - run: |
+           cd /var/www/html/My-Portfolio
+           git pull
+           npm i --force 
+           npm run build
     # Copy the dist file to another location
-    - name: Copy dist file
-      run: cp /actions-runner/_work/My-Portfolio/My-Portfolio/dist /var/www/html/My-Portfolio
+    
    
