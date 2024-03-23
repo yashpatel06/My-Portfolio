@@ -26,7 +26,7 @@ jobs:
         cache: 'npm'
     - run: |
            cd /var/www/html/My-Portfolio
-           git pull
+           sudo git pull
            npm i --force 
            npm run build
     # Copy the dist file to another location
