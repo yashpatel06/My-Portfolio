@@ -19,12 +19,7 @@ export const Hero = () => {
           Contact Me
         </a>
       </div>
-      <img
-        src={getImageUrl("hero/yash.png")}
-        alt="Hero image of me"
-        className={styles.heroImg}
-        style={{ maxWidth: "350px" }}
-      />
+      
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
