@@ -15,5 +15,22 @@
     ],
     "demo": "https://dev.appliport.com",
     "source": "https://www.github.com"
+  },
+  {
+    "title": "Drive any car (DAC)",
+    "imageSrc": "projects/dacss.png",
+    "description": "Drive Any Cars (DAC) revolutionizes the automotive industry by offering an innovative platform that facilitates the seamless buying, selling, and exploration of cars. DAC harnesses cutting-edge technology to streamline the entire process, providing a comprehensive solution for both consumers and dealers alike.",
+    "skills": [
+      "React JS",
+      "Zustand",
+      "Google Map",
+      "Tailwind",
+      "Axios",
+      "Formik",
+      "Yup",
+      "React-Query"
+    ],
+    "demo": "https://dev.web.driveanycars.com",
+    "source": "https://www.github.com"
   }
 ]
