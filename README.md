@@ -10,6 +10,7 @@ Currently, two official plugins are available:
 
 
 check one
+hello
 
 hello 
 j
